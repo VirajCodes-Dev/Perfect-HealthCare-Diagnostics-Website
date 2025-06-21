@@ -27,6 +27,28 @@
     </div>
   </header>
 
+  <!-- Testimonials -->
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-orange-600">What Our Patients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white shadow p-6 rounded">
+          <p class="italic">"Fast service, accurate reports and very affordable. Highly recommended!"</p>
+          <p class="mt-2 font-semibold">— Ramesh Kumar, Jaipur</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded">
+          <p class="italic">"Booked a test via WhatsApp and got the report on the same day. Great experience!"</p>
+          <p class="mt-2 font-semibold">— Meena Sharma, Jaipur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919314025370" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-xl z-50" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
   <!-- About Us -->
   <section class="py-16 px-6 bg-gray-50">
     <div class="max-w-4xl mx-auto text-center">
@@ -56,7 +78,22 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Book a Test -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6 text-blue-700">Book a Test</h2>
+      <form class="grid grid-cols-1 gap-6" action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required class="border p-3 rounded">
+        <input type="tel" name="phone" placeholder="Phone Number" required class="border p-3 rounded">
+        <input type="text" name="test" placeholder="Test Type (e.g. CBC, LFT)" required class="border p-3 rounded">
+        <input type="date" name="date" required class="border p-3 rounded">
+        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white py-3 rounded font-semibold">Submit Booking</button>
+      </form>
+      <p class="text-sm text-gray-500 text-center mt-4">We'll contact you shortly to confirm your booking.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6 text-orange-600">Contact Us</h2>
@@ -67,7 +104,7 @@
     </div>
   </section>
 
-  <!-- Google Map -->
+  <!-- Google Maps -->
   <section class="px-6 py-12 bg-white">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-6 text-blue-700">Find Us on Google Maps</h2>
@@ -75,8 +112,16 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-700 text-white text-center py-6">
+  <!-- Footer with Social Media -->
+  <footer class="bg-blue-700 text-white text-center py-8">
+    <div class="flex justify-center gap-6 mb-4">
+      <a href="https://bit.ly/3G0JFt4" target="_blank" aria-label="Google Business Profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" class="w-6 h-6 inline">
+      </a>
+      <a href="https://bit.ly/3GeGbD8" target="_blank" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6 inline">
+      </a>
+    </div>
     <p class="text-sm">© 2025 Perfect HealthCare Diagnostics. All rights reserved.</p>
   </footer>
 
