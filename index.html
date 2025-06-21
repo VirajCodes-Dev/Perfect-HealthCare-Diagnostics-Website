@@ -9,48 +9,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800" onload="AOS.init()">
 
   <!-- Hero Section -->
-  <header class="bg-gradient-to-r from-orange-500 to-blue-600 text-white py-10 shadow-lg">
+  <header class="bg-gradient-to-r from-orange-500 to-blue-600 text-white py-10 shadow-lg" data-aos="fade-down">
     <div class="max-w-5xl mx-auto px-4 text-center">
-      <img src="logo.png" alt="PHD Logo" class="mx-auto w-40 mb-4">
-      <h1 class="text-5xl font-bold">Perfect HealthCare Diagnostics</h1>
-      <p class="text-xl mt-3 font-light">Accurate. Affordable. Trusted.</p>
-      <p class="mt-2 italic text-base">Your health is our priority — offering reliable diagnostics with the latest equipment and trained professionals.</p>
+      <img src="logo.png" alt="PHD Logo" class="mx-auto w-40 mb-4" data-aos="zoom-in">
+      <h1 class="text-5xl font-bold" data-aos="fade-up">Perfect HealthCare Diagnostics</h1>
+      <p class="text-xl mt-3 font-light" data-aos="fade-up" data-aos-delay="100">Accurate. Affordable. Trusted.</p>
+      <p class="mt-2 italic text-base" data-aos="fade-up" data-aos-delay="200">Your health is our priority — offering reliable diagnostics with the latest equipment and trained professionals.</p>
     </div>
   </header>
 
-  <!-- Testimonials -->
-  <section class="py-16 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6 text-orange-600">What Our Patients Say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white shadow p-6 rounded">
-          <p class="italic">"Fast service, accurate reports and very affordable. Highly recommended!"</p>
-          <p class="mt-2 font-semibold">— Ramesh Kumar, Jaipur</p>
-        </div>
-        <div class="bg-white shadow p-6 rounded">
-          <p class="italic">"Booked a test via WhatsApp and got the report on the same day. Great experience!"</p>
-          <p class="mt-2 font-semibold">— Meena Sharma, Jaipur</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/919314025370" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-xl z-50" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/919314025370" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-xl z-50 animate-bounce" aria-label="Chat on WhatsApp">
     💬
   </a>
 
   <!-- About Us -->
-  <section class="py-16 px-6 bg-gray-50">
+  <section class="py-16 px-6 bg-gray-50" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-4 text-orange-600">Why Choose Us?</h2>
       <p class="text-lg text-gray-700 leading-relaxed">
@@ -60,73 +45,60 @@
   </section>
 
   <!-- Services -->
-  <section class="py-16 px-6 bg-white">
+  <section class="py-16 px-6 bg-white" data-aos="fade-up">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Our Services</h2>
       <p class="text-center text-gray-600 mb-8 italic">Every blood test available under one roof.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-gray-100 rounded-lg shadow p-4">Complete Blood Count (CBC)</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">Liver Function Test (LFT)</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">Kidney Function Test (KFT)</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">Thyroid Profile (T3 T4 TSH)</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">Vitamin D & B12 Testing</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">Blood Sugar (Fasting/PP)</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">Urine Routine/Microscopy</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">Dengue, Typhoid, Malaria Tests</div>
-        <div class="bg-gray-100 rounded-lg shadow p-4">COVID RT-PCR and Rapid Antigen</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Complete Blood Count (CBC)</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Liver Function Test (LFT)</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Kidney Function Test (KFT)</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Thyroid Profile (T3 T4 TSH)</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Vitamin D & B12 Testing</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Blood Sugar (Fasting/PP)</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Urine Routine/Microscopy</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">Dengue, Typhoid, Malaria Tests</div>
+        <div class="bg-gray-100 rounded-lg shadow p-4 transform transition-transform hover:scale-105">COVID RT-PCR and Rapid Antigen</div>
       </div>
     </div>
   </section>
 
   <!-- Book a Test -->
-  <section class="py-16 px-6 bg-white">
+  <section class="py-16 px-6 bg-white" data-aos="fade-up">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-6 text-blue-700">Book a Test</h2>
-      <form class="grid grid-cols-1 gap-6" action="https://formspree.io/f/yourformid" method="POST">
+      <form class="grid grid-cols-1 gap-6" action="https://formspree.io/f/mwpbnjbr" method="POST">
         <input type="text" name="name" placeholder="Your Name" required class="border p-3 rounded">
         <input type="tel" name="phone" placeholder="Phone Number" required class="border p-3 rounded">
         <input type="text" name="test" placeholder="Test Type (e.g. CBC, LFT)" required class="border p-3 rounded">
         <input type="date" name="date" required class="border p-3 rounded">
-        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white py-3 rounded font-semibold">Submit Booking</button>
+        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white py-3 rounded font-semibold transition-transform transform hover:scale-105">Submit Booking</button>
       </form>
       <p class="text-sm text-gray-500 text-center mt-4">We'll contact you shortly to confirm your booking.</p>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="bg-gray-50 py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6 text-orange-600">Contact Us</h2>
-      <p class="text-lg mb-2">📍 Plot No -15, Shivshakti Nagar, Iskcon Temple Road, Sumer Nagar, Mansarovar, Jaipur, Rajasthan 302020</p>
-      <p class="text-lg mb-2">📞 +91-931402530, +91-9782688654</p>
-      <p class="text-lg mb-6">💬 WhatsApp: <a href="https://wa.me/919314025370" class="text-blue-600 underline" target="_blank">Chat Now</a></p>
-      <a href="https://wa.me/919314025370" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold text-lg shadow-lg transition">📲 Book a Test on WhatsApp</a>
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white py-10 mt-12">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="https://bit.ly/3G0JFt4" target="_blank" aria-label="Google Business Profile">
+          <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" class="w-6 h-6 inline">
+          <span class="ml-2 text-sm">Perfect HealthCare Diagnostics</span>
+        </a>
+        <a href="https://bit.ly/3GeGbD8" target="_blank" aria-label="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6 inline">
+          <span class="ml-2 text-sm">Perfect HealthCare Diagnostics</span>
+        </a>
+      </div>
+      <p class="text-sm">📧 perfecthealthcarediagnostics@gmail.com</p>
+      <p class="text-sm">📞 +91-9314025370, +91-9782688654</p>
+      <p class="text-xs mt-4">© 2025 Perfect HealthCare Diagnostics. All rights reserved.</p>
     </div>
-  </section>
+  </footer>
 
-  <!-- Google Maps -->
-  <section class="px-6 py-12 bg-white">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6 text-blue-700">Find Us on Google Maps</h2>
-      <iframe class="w-full h-72 rounded-lg shadow-md" src="https://www.google.com/maps?q=Perfect+HealthCare+Diagnostics,+Mansarovar,+Jaipur&output=embed" allowfullscreen loading="lazy"></iframe>
-    </div>
-  </section>
-
-  <!-- Footer with Social Media -->
-  <footer class="bg-blue-700 text-white text-center py-8">
-  <div class="flex flex-col items-center gap-4 mb-4">
-    <a href="https://bit.ly/3G0JFt4" target="_blank" aria-label="Google Business Profile" class="flex items-center gap-2">
-      <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" class="w-6 h-6">
-      <span class="text-sm font-medium">Perfect HealthCare Diagnostics - Google</span>
-    </a>
-    <a href="https://bit.ly/3GeGbD8" target="_blank" aria-label="Instagram" class="flex items-center gap-2">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
-      <span class="text-sm font-medium">Perfect HealthCare Diagnostics - Instagram</span>
-    </a>
-  </div>
-  <p class="text-sm">© 2025 Perfect HealthCare Diagnostics. All rights reserved.</p>
-</footer>
-
-
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
