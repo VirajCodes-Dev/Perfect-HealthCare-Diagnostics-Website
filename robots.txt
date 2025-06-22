@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://virajcodes-dev.github.io/Perfect-HealthCare-Diagnostics-Website/sitemap.xml
